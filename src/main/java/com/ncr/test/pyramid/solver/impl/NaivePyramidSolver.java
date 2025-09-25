@@ -13,7 +13,8 @@ public class NaivePyramidSolver implements PyramidSolver {
     }
 
     private long getTotalAbove(int row, int column, Pyramid pyramid) {
-        if (row == 0) return 0;
+        // the existing algorithm ignores the values in the first row and does not add them to the path sum
+        if (row == -1) return 0;
 
         int myValue = pyramid.get(row, column);
         long left  = myValue + getTotalAbove(row - 1, column, pyramid);
