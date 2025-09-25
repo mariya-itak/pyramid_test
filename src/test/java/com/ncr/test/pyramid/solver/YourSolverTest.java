@@ -11,7 +11,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 public class YourSolverTest {
-    private static final int MAX_DEPTH = 100;
+    private static final int MAX_DEPTH = 10000;
 
     private static final int[][] SAMPLE_DATA = {
             { 5, 9, 8, 4 },
